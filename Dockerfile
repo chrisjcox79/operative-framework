@@ -27,7 +27,7 @@ RUN glide install --strip-vendor && \
 ############################
 # Runtime image
 ############################
-FROM alpine:3.10 AS runtime
+FROM alpine:3.11 AS runtime
 
 # Install tini to /usr/local/sbin
 ADD https://github.com/krallin/tini/releases/download/v0.18.0/tini-muslc-amd64 /usr/local/sbin/tini
